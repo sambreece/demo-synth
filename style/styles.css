@@ -1,0 +1,40 @@
+body { 
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+h1 {
+    margin: 0;
+    background-color: gray;
+    border-bottom: 2px solid #00ff00;
+}
+
+#top_article {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#bottom_article {
+    height: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#speech_container {
+    width: 40%;
+}
+.dropdown {
+    width: 100%;
+}
+#speech_button_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+#synth_container {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

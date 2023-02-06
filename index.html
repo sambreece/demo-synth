@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SYNTH DEMO</title>
+
+        <!-- CSS Reset -->
+        <link rel="stylesheet" type="text/css" 
+        href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+
+        <!--Boostrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!--Custom CSS-->
+		<link rel="stylesheet" href="./style/styles.css">
+	</head>
+	<body>
+        <header>
+            <h1>synthesis</h1>
+        </header>
+
+        <main>
+            <article id="top_article">
+                <div id="cube_container"></div>
+            </article>
+            <article id="bottom_article">
+                <div id="speech_container">
+                    <form action="#" id="speechForm">
+                        <div class="mb-3">
+                            <label for="speechText" class="form-label">Speech Synthesizer</label>
+                            <input type="text" class="form-control" id="speechText" placeholder="Enter text to speak" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rateRange" class="form-label">Rate</label>
+                            <input type="range" step="0.01" min="0.1" max="2" class="form-range" id="rateRange">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pitchRange" class="form-label">Pitch</label>
+                            <input type="range" step="0.01" min="0" max="2" class="form-range" id="pitchRange">
+                        </div>
+                        <div class="mb-3">
+                            <label for="volumeRange" class="form-label">Volume</label>
+                            <input type="range" step="0.01" min="0" max="1" class="form-range" id="volumeRange">       
+                        </div>
+
+                        <div class="mb-3">
+                            <select class="custom-select form-control input-dropdown" id="voiceSelect"></select>
+                        </div>
+                        <div class="mb-3" id="speech_button_container">
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-success mb-3">Speak</button>
+                            </div>
+                            <!-- <div class="col-auto">
+                                <button type="" class="btn btn-danger mb-3">Stop speaking</button>
+                            </div> -->
+                        </div>
+                    </form>
+                </div>
+                <div id="synth_container">
+                    <div class="col-auto">
+                        <button type="" class="btn btn-success mb-3" id="startSynth">Stop/Start</button>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!--Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!--Tone.js-->
+        <script src="./js/tone.js"></script>
+        <!--Three.js-->
+		<script src="./js/three.js"></script>
+        <!--Main JS-->
+        <script src="./js/main.js"></script>
+	</body>
+</html>
